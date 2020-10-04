@@ -215,13 +215,16 @@ a img{
 
 .projectleft{
     width: 50%;
-    background-image: linear-gradient(180deg,rgba(43,135,218,0) 50%,rgba(0,0,0,0.4) 80%), url(../Images/TripWolfMockup.png);
-    background-color: #6dcede;
     background-size: cover;
     padding-top: 20vw;
     padding-right: 2vw;
     padding-bottom: 3vw;
     padding-left: 2vw;
+}
+
+.TW{
+    background-image: linear-gradient(180deg,rgba(43,135,218,0) 50%,rgba(0,0,0,0.4) 80%), url(../Images/TripWolfMockup.png);
+    background-color: #6dcede;
 }
 
 .title{
@@ -261,7 +264,15 @@ a img{
     font-weight: 300;
     font-size: 16px;
     line-height: 1.8em;
+    
+}
+
+.bluediv{
     border-bottom: 2px solid #6dcede;
+}
+
+.reddiv{
+    border-bottom: 2px solid #d55943;
 }
 
 .projectright h5{
@@ -283,4 +294,15 @@ a img{
 .projectright img{
     width: 25%;
     float: right;
+}
+
+.MM-highlight{
+    border-bottom: 24px solid #d55943;
+    display: inline-block;
+    line-height: 0.1;
+}
+
+.MM{
+    background-image: linear-gradient(180deg,rgba(43,135,218,0) 50%,rgba(0,0,0,0.4) 80%), url(../Images/Masked-Mockup.png);
+    background-color: #d55943;
 }
