@@ -1,0 +1,286 @@
+.nav{
+    background-color: white;
+    width: 80%;
+    height: 76px;
+    margin: auto;
+    
+    align-items: stretch;
+}
+
+.logo{
+    max-height: 40px;
+    align-self: center;
+}
+
+.navlinks{
+ display: inline-block;
+ float: right;
+ align-self: center;
+}
+
+.links{
+    display: inline-block;
+    color: #343434;
+    font-family: Work Sans;
+    font-weight: 800;
+    font-style: normal;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+h1 {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 92px;
+    line-height: 107%;
+    letter-spacing: 0.07em;
+    color: #343434;
+    }
+    
+h2 {
+    font-family: Telex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 107%;
+    letter-spacing: 0.07em;
+    color: #343434;
+    }
+    
+h3{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 107%;
+    letter-spacing: 0.07em;
+    color: #343434;
+    }
+    
+    
+h4 {
+    font-family: Telex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 107%;
+    letter-spacing: 0.07em;
+    color: #343434;
+    }
+    
+h5{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 107%;
+    letter-spacing: 0.07em;
+    color: #343434;
+    }
+    
+ h6 {
+    font-family: Telex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 107%;
+    letter-spacing: 0.07em;
+    color: #343434;
+    }
+    
+p {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 107%;
+    letter-spacing: 0.07em;
+    color: #343434;
+    }
+
+.hero-image{
+    background-size: contain;
+    background-position: center right;
+    background-image: url("../Images/Hero-BG.png");
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    position: relative;
+    display: block;
+}
+
+.hero{
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row;
+    width: 80%;
+    max-width: none;
+    height: 10px;
+    min-height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-container{
+    padding: 10px;
+    text-align: left;
+    margin-left: 0;
+    align-self: center;
+}
+
+.h6-highlight{
+    border-bottom: 24px solid #9bc7a7;
+    display: inline-block;
+    line-height: 0.1;
+    margin-bottom: 36px;
+    margin-left: 220px;
+}
+
+#name{
+    margin-bottom: -48px;
+}
+
+#hero-slogan{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.button{
+    padding: 0.3em 1em;
+    color: #343434;
+    border-radius: 4px;
+    font-size: 20px;
+    font-family: 'Work Sans';
+    font-weight: 600;
+    margin-top: 20px;
+    margin-right: 16px;
+    display: inline-block;
+    line-height: 1.7em;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border: 2px solid;
+    text-decoration: none;
+}
+
+.scroll{
+    width: 100%;
+    min-height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.scroll-arrow{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+a img{
+    width: 36px;
+    height: 36px;
+}
+
+.project{
+    padding-right: 8vw;
+    padding-left: 8vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.projectcontainer{
+    box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
+    display: flex;
+    margin: auto;
+
+}
+
+.projectleft{
+    width: 50%;
+    background-image: linear-gradient(180deg,rgba(43,135,218,0) 50%,rgba(0,0,0,0.4) 80%), url(../Images/TripWolfMockup.png);
+    background-color: #6dcede;
+    background-size: cover;
+    padding-top: 20vw;
+    padding-right: 2vw;
+    padding-bottom: 3vw;
+    padding-left: 2vw;
+}
+
+.title{
+    align-self: baseline;
+}
+
+.projectleft h3{
+    color: white;
+    line-height: 1.3vw;
+    margin-top: 3vw;
+}
+
+.projectleft p{
+    color: white;
+    line-height: 1.3vw;
+
+}
+
+.TW-highlight{
+    border-bottom: 24px solid #6dcede;
+    display: inline-block;
+    line-height: 0.1;
+}
+
+.projectright{
+        width: 50%;
+        padding-top: 2vw;
+        padding-right: 3vw;
+        padding-bottom: 2vw;
+        padding-left: 3vw;
+        align-self: center;
+        display: inline-block;
+        position: relative;
+    }
+
+.projectinfo{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.8em;
+    border-bottom: 2px solid #6dcede;
+}
+
+.projectright h5{
+    font-size: 3vw;
+    line-height: 1.2em;
+}
+
+.body{
+    display: inline-block;
+    padding-right: 2vw;
+    align-self: center;
+}
+
+.projectdescription{
+    line-height: 1.7em;
+    width: 75%;
+}
+
+.projectright img{
+    width: 25%;
+    float: right;
+}
