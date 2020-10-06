@@ -2,6 +2,10 @@ body{
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .nav{
     background-color: white;
     width: 80%;
@@ -170,6 +174,7 @@ p {
     line-height: 1.7em;
     border: 2px solid;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .button:hover {
@@ -189,10 +194,12 @@ p {
     right: 0;
     bottom: 0;
     left: 0;
+    
 }
 
 .scroll:hover{
-    transform: scale(1.2)
+    transform: scale(1.2);
+    
 }
 
 a img{
