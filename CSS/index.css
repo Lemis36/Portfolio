@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .nav{
     background-color: white;
     width: 80%;
@@ -27,6 +31,10 @@
     padding-right: 10px;
     padding-left: 10px;
 
+}
+
+.links:hover {
+    color: #9bc7a7
 }
 
 h1 {
@@ -106,7 +114,7 @@ p {
     background-image: url("../Images/Hero-BG.png");
     background-color: #ffffff;
     background-repeat: no-repeat;
-    min-height: 800px;
+    min-height: 740px;
     position: relative;
     display: block;
 }
@@ -119,7 +127,7 @@ p {
     width: 80%;
     max-width: none;
     height: 10px;
-    min-height: 800px;
+    min-height: 740px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -160,12 +168,13 @@ p {
     margin-right: 16px;
     display: inline-block;
     line-height: 1.7em;
-    background-color: transparent;
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
     border: 2px solid;
     text-decoration: none;
+}
+
+.button:hover {
+    background-color: #9bc7a7;
+    border-color: #9bc7a7;
 }
 
 .scroll{
@@ -180,18 +189,10 @@ p {
     right: 0;
     bottom: 0;
     left: 0;
-    pointer-events: none;
 }
 
-.scroll-arrow{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-    box-sizing: border-box;
+.scroll:hover{
+    transform: scale(1.2)
 }
 
 a img{
@@ -211,6 +212,11 @@ a img{
     display: flex;
     margin: auto;
 
+}
+
+.projectcontainer:hover{
+    transform: scale(1.04);
+    box-shadow: 0px 30px 18px -6px rgba(0,0,0,0.3);
 }
 
 .projectleft{
