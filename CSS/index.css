@@ -11,8 +11,9 @@ html {
     width: 80%;
     height: 76px;
     margin: auto;
-    
+
     align-items: stretch;
+    z-index: 10;
 }
 
 .logo{
@@ -36,6 +37,7 @@ html {
     padding-left: 10px;
 
 }
+
 
 .links:hover {
     color: #9bc7a7
@@ -227,6 +229,9 @@ a img{
 }
 
 .projectleft{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
     width: 50%;
     background-size: cover;
     padding-top: 20vw;
@@ -318,4 +323,89 @@ a img{
 .MM{
     background-image: linear-gradient(180deg,rgba(43,135,218,0) 50%,rgba(0,0,0,0.4) 80%), url(../Images/Masked-Mockup.png);
     background-color: #d55943;
+}
+
+.aboutmeBG{
+    background-image: url(../Images/About-BG.png);
+    background-repeat: repeat-y;
+    background-position: left;
+
+}
+
+.aboutme{
+    width: 80%;
+    margin: auto;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+}
+
+.h4-highlight{
+    border-bottom: 24px solid #9bc7a7;
+    display: inline-block;
+    line-height: 0.1;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutme img{
+    width: 40%;
+    justify-content: center;
+}
+
+.aboutme p{
+    padding: 20px;
+}
+
+.skillsblock{
+    background-color: #f7f7f7;
+}
+
+.skill{
+    background-color: white;
+    margin: 2vw;
+    padding: 16px;
+    text-align: center;
+    width: 25%;
+    box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
+    
+}
+
+
+.skillsblock h3{
+    margin-left: 24px;
+}
+
+@media only screen and (max-width: 700px){
+    .flex-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .skill{
+        width: 85%;
+    }
+
+    .aboutme img{
+        width: 80%;
+    }
+
+    .projectcontainer{
+        flex-direction: column;
+    }
+
+    .projectleft, .projectright{
+        width: 100%;
+    }
+
+    .h6-highlight{
+        font-size: 24px;
+
+        margin-left: 0;
+    }
+
+
 }
