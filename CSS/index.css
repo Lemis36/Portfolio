@@ -304,7 +304,7 @@ a img{
 .projectcontainer{
     box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
     display: flex;
-    margin: auto;
+    /* margin: auto; */
     transition: all 0.3s ease;
 }
 
@@ -315,11 +315,12 @@ a img{
 
 .projectleft{
     display: flex;
-    align-items: flex-end;
+    align-self: flex-end;
     flex-direction: column;
+    height: 100%;
     width: 50%;
     background-size: cover;
-    padding-top: 20vw;
+    padding-top: 32vw;
     padding-right: 2vw;
     padding-bottom: 3vw;
     padding-left: 2vw;
@@ -347,7 +348,8 @@ a img{
 }
 
 .title{
-    align-self: baseline;
+   align-items: end;
+    
 }
 
 .projectleft h3{
@@ -359,7 +361,8 @@ a img{
 .projectleft p{
     color: white;
     line-height: 1.3vw;
-
+    margin-top: -5%;
+    
 }
 
 .TW-highlight{
@@ -502,7 +505,7 @@ a img{
 
     .projectcontainer{
         flex-direction: column;
-        padding-right: 5%;
+        padding-left: 5%;
     }
 
     .projectleft, .projectright{
@@ -510,7 +513,7 @@ a img{
     }
 
     .projectright{
-        padding-left: 5%;
+        /* padding-left: 5%; */
     }
 
     .h6-highlight{
