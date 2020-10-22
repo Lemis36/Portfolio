@@ -1,5 +1,6 @@
 body{
     overflow-x: hidden;
+    position: relative;
 }
 
 html {
@@ -9,11 +10,18 @@ html {
 .nav{
     background-color: white;
     width: 80%;
+
     height: 76px;
     margin: auto;
-
+    opacity: .1;
     align-items: stretch;
+
     z-index: 10;
+    position: fixed;
+    top: 0;
+    padding: 0 10%;
+    
+    
 }
 
 .logo{
@@ -27,6 +35,35 @@ html {
  align-self: center;
 }
 
+#hamburger, #cancel{
+    display: none;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+
+
+#dropDown{
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
+    padding-inline-start: 0px;
+}
+
+.linkD{
+    display: inline-block;
+    color: #343434;
+    font-family: Work Sans;
+    font-weight: 800;
+    font-style: normal;
+    padding: 16px;
+    cursor: pointer;
+    border-bottom: 2px solid #343434;
+    border-left: 12px solid #9bc7a7;
+    
+}
+
 .links{
     display: inline-block;
     color: #343434;
@@ -35,12 +72,12 @@ html {
     font-style: normal;
     padding-right: 10px;
     padding-left: 10px;
-
+    cursor: pointer;
 }
 
 
 .links:hover {
-    color: #9bc7a7
+    color: rgb(155, 199, 167)
 }
 
 h1 {
@@ -120,7 +157,7 @@ p {
     background-image: url("../Images/Hero-BG.png");
     background-color: #ffffff;
     background-repeat: no-repeat;
-    min-height: 740px;
+    height: 100vh;
     position: relative;
     display: block;
 }
@@ -132,10 +169,14 @@ p {
     flex-flow: row;
     width: 80%;
     max-width: none;
-    height: 10px;
-    min-height: 740px;
+    height: 100vh;
+    /* min-height: 740px; */
     margin-left: auto;
     margin-right: auto;
+    opacity: 0;
+    position: absolute;
+    left: -250px;
+
 }
 
 .hero-container{
@@ -146,7 +187,7 @@ p {
 }
 
 .h6-highlight{
-    border-bottom: 24px solid #9bc7a7;
+    border-bottom: 24px solid rgb(155, 199, 167);
     display: inline-block;
     line-height: 0.1;
     margin-bottom: 36px;
@@ -163,7 +204,14 @@ p {
     line-height: 1.5;
 }
 
-.button{
+#hero-slogan2{
+    display: none;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+button{
     padding: 0.3em 1em;
     color: #343434;
     border-radius: 4px;
@@ -177,12 +225,34 @@ p {
     border: 2px solid;
     text-decoration: none;
     transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    background-color:white;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.button:hover {
+span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 600ms linear;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  @keyframes ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+
+button:hover {
     background-color: #9bc7a7;
     border-color: #9bc7a7;
 }
+
+
 
 .scroll{
     width: 100%;
@@ -196,7 +266,25 @@ p {
     right: 0;
     bottom: 0;
     left: 0;
-    
+    transition: all 0.3s ease;
+}
+
+a img{
+    width: 36px;
+    height: 36px;
+    animation: bounce .7s infinite;
+}
+
+@keyframes bounce{
+    from {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: 30px;
+    }
+    to{
+        margin-top: 0px;
+    }
 }
 
 .scroll:hover{
@@ -204,10 +292,7 @@ p {
     
 }
 
-a img{
-    width: 36px;
-    height: 36px;
-}
+
 
 .project{
     padding-right: 8vw;
@@ -220,11 +305,11 @@ a img{
     box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
     display: flex;
     margin: auto;
-
+    transition: all 0.3s ease;
 }
 
 .projectcontainer:hover{
-    transform: scale(1.04);
+    transform: scale(1.01);
     box-shadow: 0px 30px 18px -6px rgba(0,0,0,0.3);
 }
 
@@ -243,6 +328,22 @@ a img{
 .TW{
     background-image: linear-gradient(180deg,rgba(43,135,218,0) 50%,rgba(0,0,0,0.4) 80%), url(../Images/TripWolfMockup.png);
     background-color: #6dcede;
+}
+
+#wolfbutton{
+    transition: all 0.3s ease;
+}
+#wolfbutton:hover{
+    background-color: #6dcede;
+    border: 2px solid #6dcede;
+}
+
+#maskbutton{
+    transition: all 0.3s ease;
+}
+#maskbutton:hover{
+    background-color: #d55943;
+    border: 2px solid #d55943;
 }
 
 .title{
@@ -371,15 +472,21 @@ a img{
     text-align: center;
     width: 25%;
     box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
-    
+    transition: all 0.3s ease;
 }
 
+.skill:hover{
+    transform: scale(1.04);
+    box-shadow: 0px 30px 18px -6px rgba(0,0,0,0.3);
+    
+}
 
 .skillsblock h3{
     margin-left: 24px;
 }
 
-@media only screen and (max-width: 700px){
+
+@media only screen and (max-width: 800px){
     .flex-container{
         flex-direction: column;
         flex-wrap: wrap;
@@ -395,10 +502,15 @@ a img{
 
     .projectcontainer{
         flex-direction: column;
+        padding-right: 5%;
     }
 
     .projectleft, .projectright{
         width: 100%;
+    }
+
+    .projectright{
+        padding-left: 5%;
     }
 
     .h6-highlight{
@@ -407,5 +519,26 @@ a img{
         margin-left: 0;
     }
 
+    .hero{
+       margin-left: -80px;
+    }
 
+    #mainMenu{
+        display: none;
+    }
+
+    #hamburger{
+        display: inline-block;
+    }
+
+    /* #cancel{
+        display: inline-block;
+    } */
+
+    #hero-slogan{
+        display: none;
+    }
+    #hero-slogan2{
+        display: block;
+    }
 }
